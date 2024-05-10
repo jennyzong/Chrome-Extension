@@ -1,10 +1,13 @@
-// Refactor the code so that it uses .addEventListener()
-// when you click the SAVE INPUT button
-
-let inputBtn = document.getElementById("input-btn")
+let myLeads = []
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
 
 inputBtn.addEventListener("click", function() {
-    console.log("Button clicked!")
+    // Push the value from the inputEl into the myLeads array 
+    // instead of the hard-coded "www.awesomeleads.com" value
+    // Google -> "get value from input field javascript"
+    myLeads.push("www.awesomelead.com")
+    console.log(myLeads)
 })
 
 
